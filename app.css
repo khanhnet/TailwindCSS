@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* components.css */
+a {
+  @apply no-underline;
+  color: #3d92c9; }
+
+.header {
+  @apply text-center top-auto my-12 mx-auto; }
+
+.sidebar {
+  background: #3d4f5d;
+  @apply font-sans text-white w-full h-auto break-normal; }
+
+.content {
+  @apply w-full px-12 pt-8 pb-0 font-sans; }
+  .content-subhead {
+    @apply uppercase py-2 px-0 tracking-widest font-medium border-b border-solid my-3;
+    color: #aaa;
+    border-color: #eee;
+    font-size: 80% !important; }
+
+.brand-tagline {
+  @apply m-0 font-light text-2xl;
+  color: #b0cadb; }
+
+.brand-title {
+  @apply m-0 uppercase text-3xl font-bold; }
+
+.post-title {
+  @apply my-3 text-3xl font-bold;
+  color: #222; }
+
+.post-meta {
+  color: #999;
+  font-size: 90% !important; }
+  .post-meta-img {
+    @apply ml-4 -mt-8 text-white text-xl;
+    text-shadow: 0 1px 1px #333; }
+
+.post-description {
+  @apply leading-relaxed font-serif mt-4;
+  color: #444; }
+
+.avatar-image {
+  @apply ml-4 float-right rounded-full; }
+
+.menu-item {
+  @apply inline-block p-0 m-0 h-full relative align-middle; }
+
+@media (min-width: 768px) {
+  .header {
+    margin: 80% 2em 0; }
+  .content {
+    margin-left: 25%; } }
+
+.button {
+  font-size: 85% !important;
+  @apply bg-transparent rounded-sm border-solid border-2 inline-block text-center py-2 px-4 mt-4 text-white tracking-wider; }
+  .button-link {
+    font-size: 80% !important;
+    @apply py-2 px-4 text-gray-400; }
+
+.tag {
+  font-size: 80% !important;
+  @apply my-0 mx-1 px-4 py-1 text-white; }
