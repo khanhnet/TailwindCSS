@@ -17,7 +17,7 @@
   },
   "scripts": {
     "predeploy": "npm run start",
-    "deploy": "gh-pages -d css",
+    "deploy": "gh-pages -d public/build",
     "css-build": "node-sass --omit-source-map-url sass/app.scss css/app.css",
     "build": "postcss css/app.css -o public/build/app.css",
     "css-watch": "npm run css-build -- --watch",
